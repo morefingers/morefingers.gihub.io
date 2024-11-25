@@ -9,6 +9,7 @@
         body {
             background: #000;
             margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         .bubbles {
@@ -522,6 +523,28 @@
         }
         }
 
+        .go-to-content {
+            background-color: #000;
+            left: -9999px;
+            opacity: 0;
+            padding: 1em;
+            position: absolute;
+            z-index: 21;
+            color: red;
+            
+        }
+
+        .content-area {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            position: absolute;
+            z-index: 20;
+        }
+
     </style>
 
 		<meta name="description" content="Página inicial da More Fingers" />
@@ -543,6 +566,11 @@
         <meta property="og:description" content="Página inicial da More Fingers" />
         <meta property="og:url" content="https://morefingers.gihub.io" />
         <meta property="og:site_name" content="More Fingers" />
+        <link rel="icon" src="https://res.cloudinary.com/czare/image/upload/v1732499561/jobs/more-fingers-icon.ico" />
+
+        <link rel="icon" href="https://res.cloudinary.com/czare/image/upload/v1732499561/jobs/more-fingers-icon.ico" sizes="32x32">
+        <link rel="icon" href="https://res.cloudinary.com/czare/image/upload/v1732499561/jobs/more-fingers-icon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="https://res.cloudinary.com/czare/image/upload/c_scale,h_180,w_180/v1732499561/jobs/more-fingers-icon.png">
 
         <meta property="og:image" content="https://res.cloudinary.com/czare/image/upload/v1732498198/jobs/more-fingers-logo.png"/>
 		
@@ -555,7 +583,7 @@
 
 
     <div id="page" class="site">
-	    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	    <a href="#content" class="go-to-content" tabindex="0">Ir direto para o conteúdo</a>
 
 	
         <header id="site-header" class="site-header">

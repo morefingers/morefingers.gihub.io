@@ -1,2 +1,1 @@
-# morefingers.gihub.io
-More Fingers pages
+[More Fingers page](https://morefingers.github.io/)
